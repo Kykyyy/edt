@@ -96,6 +96,15 @@ CREATE TABLE IF NOT EXISTS `enseignant` (
   KEY `id_numtypeposte` (`id_numtypeposte`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
+
+--
+-- Contenu de la table `enseignant`
+--
+
+INSERT INTO `enseignant` VALUES (1, 'Laurent', 'Pierre', "19/09/2000","www.posteCV.com", "1");
+INSERT INTO `enseignant` VALUES (1, 'Doub', 'Piah', "19/09/2100","www.test.com", "1");
+
+
 -- --------------------------------------------------------
 
 --
