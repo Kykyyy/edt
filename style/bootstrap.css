@@ -5616,7 +5616,8 @@ input[type="submit"].btn.btn-mini {
 
 .thumbnail {
   display: block;
-  background-image: url('../image/logo.png');
+  background-image: url('../image/logoNanterre.png');
+  background-repeat: no-repeat;
   background-color: whiteSmoke;
   height: 256px;
   padding: 4px;
