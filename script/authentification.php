@@ -8,8 +8,8 @@ if(!empty($_POST['id']) && !empty($_POST['pass']))
 {  
 	 
 	// Connexion à la base  
-
-	$requete = "SELECT * FROM user, type_poste WHERE login = '".$_POST['id']."' AND mdp = '".$_POST['pass']."' AND id_numtypeposte = '0'";
+	var_dump($_POST);
+	$requete = "SELECT * FROM utilisateur, type_poste WHERE login = '".$_POST['id']."' AND mdp = '".$_POST['pass']."' AND id_numtypeposte = '6'";
 
 	/*
 	$query = $db->prepare($requete);
@@ -19,10 +19,11 @@ if(!empty($_POST['id']) && !empty($_POST['pass']))
 
 	$res=mysql_query($requete);
 	if(!$res) echo "<h2>Erreur de selection \n n",mysql_errno()," : ",mysql_error()."</h2>";
-		$result=mysql_fetch_assoc($res);	
+		$result=mysql_fetch_assoc($res);
+	var_dump($result);
 
 
-	if (empty($result) || !sizeof($result)) // Login / Mot de passe invalide  
+	if( empty($result) || !sizeof($result) ) // Login / Mot de passe invalide  
 		{ 
 			$_SESSION['erreur'] = 'Login ou mot de passe non valide'; 
 

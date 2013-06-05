@@ -1,14 +1,17 @@
 
 <!DOCTYPE html>
 
+<?php 
+session_start();
+?>
 
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <title>EDT MIAGE NANTERRE</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"    content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="author"      content="">
 
     <!-- Le styles -->
     <link href="./style/bootstrap.css" rel="stylesheet">
@@ -46,9 +49,12 @@
           <div class="nav-collapse collapse">
 
              <?php 
-              if( (!empty($_SESSION)) && (!empty($_SESSION['user_data']))){
+              if( $_SESSION['connexion'] != 'success'){
+
+                var_dump($_SESSION);
               
-              echo("<p class='navbar-text pull-right'>Logged in as <a href='#' class='navbar-link'>Username</a></p>");
+                   // echo("<p class='navbar-text pull-right'>Connecté en tant que <a href='#' class='navbar-link'>".$_SESSION['user_data']['nom_u']." ".$_SESSION['user_data']['prenom_u']."</a></p>");
+
               }
             ?>
             
@@ -80,7 +86,7 @@
               </li>
             </ul>
             <?php 
-              if( ( empty($_SESSION) ) && ( empty($_SESSION['user_data']) )){
+              if($_SESSION == NULL || $_SESSION['connexion'] != 'success') {
  
                 require('./composants/formLogin.php');
               }
@@ -117,12 +123,12 @@
                   </div>
                 </div>
                 <?php 
- 
-                if( ( !empty($_SESSION) ) /*&& ( $_SESSION['user_data']->admin == true)*/ ){
+                if( $_SESSION != NULL && $_SESSION['connexion'] == 'success' && $_SESSION['admin'] == true){
  
                     require('./composants/menuGestion.php');
  
                 }
+
  
                 ?>
                 
