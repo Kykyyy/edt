@@ -5,7 +5,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Bootstrap, from Twitter</title>
+    <title>EDT MIAGE NANTERRE</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -93,6 +93,9 @@
     <div class="container-fluid">
       <div class="row-fluid">
         <div class="span3">
+            <div class="thumbnail">
+      
+            </div>
           <div class="well sidebar-nav">
             <ul class="nav nav-list">
               <div class="accordion" id="accordion2">
@@ -126,6 +129,7 @@
               </div>
             </ul>
           </div><!--/.well -->
+
         </div><!--/span-->
         <div class="span9">
           <div class="hero-unit">
@@ -176,7 +180,35 @@
 
         </tr>
         <tr>
+            <td>08:15</td>
+
+            <td class=" no-events" rowspan="1"></td>
+
+            <td class=" no-events" rowspan="1"></td>
+
+            <td class=" no-events" rowspan="1"></td>
+
+            <td class=" no-events" rowspan="1"></td>
+
+            <td class=" no-events" rowspan="1"></td>
+
+        </tr>
+        <tr>
             <td>08:30</td>
+
+            <td class=" no-events" rowspan="1"></td>
+
+            <td class=" no-events" rowspan="1"></td>
+
+            <td class=" no-events" rowspan="1"></td>
+
+            <td class=" no-events" rowspan="1"></td>
+
+            <td class=" no-events" rowspan="1"></td>
+
+        </tr>
+        <tr>
+            <td>08:45</td>
 
             <td class=" no-events" rowspan="1"></td>
 
@@ -204,7 +236,35 @@
 
         </tr>
         <tr>
+            <td>09:15</td>
+
+            <td class=" no-events" rowspan="1"></td>
+
+            <td class=" no-events" rowspan="1"></td>
+
+            <td class=" no-events" rowspan="1"></td>
+
+            <td class=" no-events" rowspan="1"></td>
+
+            <td class=" no-events" rowspan="1"></td>
+
+        </tr>
+        <tr>
             <td>09:30</td>
+
+            <td class=" no-events" rowspan="1"></td>
+
+            <td class=" no-events" rowspan="1"></td>
+
+            <td class=" no-events" rowspan="1"></td>
+
+            <td class=" no-events" rowspan="1"></td>
+
+            <td class=" no-events" rowspan="1"></td>
+
+        </tr>
+        <tr>
+            <td>09:45</td>
 
             <td class=" no-events" rowspan="1"></td>
 
