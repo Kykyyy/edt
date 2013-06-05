@@ -160,17 +160,23 @@
         <tr>
             <th>&nbsp;</th>
 <<<<<<< HEAD
+<<<<<<< HEAD
             <th width="20%">Monday</th>
             <th width="20%">Tuesday</th>
             <th width="20%">Wednesday</th>
             <th width="20%">Thursday</th>
             <th width="20%">Friday</th>
 =======
+=======
+>>>>>>> 166ab6f4db79355d4fbed25a4022f88951c5df80
             <th width="20%">Lundi</th>
             <th width="20%">Mardi</th>
             <th width="20%">Mercredi</th>
             <th width="20%">Jeudi</th>
             <th width="20%">Vendredi</th>
+<<<<<<< HEAD
+>>>>>>> 166ab6f4db79355d4fbed25a4022f88951c5df80
+=======
 >>>>>>> 166ab6f4db79355d4fbed25a4022f88951c5df80
         </tr>
     </thead>
@@ -611,17 +617,23 @@
         <tr>
             <th>&nbsp;</th>
 <<<<<<< HEAD
+<<<<<<< HEAD
             <th width="20%">Monday</th>
             <th width="20%">Tuesday</th>
             <th width="20%">Wednesday</th>
             <th width="20%">Thursday</th>
             <th width="20%">Friday</th>
 =======
+=======
+>>>>>>> 166ab6f4db79355d4fbed25a4022f88951c5df80
             <th width="20%">Lundi</th>
             <th width="20%">Mardi</th>
             <th width="20%">Mercredi</th>
             <th width="20%">Jeudi</th>
             <th width="20%">Vendredi</th>
+<<<<<<< HEAD
+>>>>>>> 166ab6f4db79355d4fbed25a4022f88951c5df80
+=======
 >>>>>>> 166ab6f4db79355d4fbed25a4022f88951c5df80
         </tr>
     </thead>
