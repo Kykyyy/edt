@@ -82,7 +82,7 @@
             <?php 
               if( ( empty($_SESSION) ) && ( empty($_SESSION['user_data']) )){
  
-                require('./composants/formLogin.html');
+                require('./composants/formLogin.php');
               }
             ?>
           </div><!--/.nav-collapse -->
@@ -120,7 +120,7 @@
  
                 if( ( !empty($_SESSION) ) /*&& ( $_SESSION['user_data']->admin == true)*/ ){
  
-                    require('./composants/menuGestion.html');
+                    require('./composants/menuGestion.php');
  
                 }
  
