@@ -2,10 +2,10 @@
   <div class="accordion-group">
     <div class="accordion-heading">
       <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseAjoutIntervenant">
-        Ajout d'un intervenant
+        <h3>Ajout d'un intervenant</h3>
       </a>
     </div>
-    <div id="collapseAjoutIntervenant" class="accordion-body collapse in">
+    <div id="collapseAjoutIntervenant" class="accordion-body collapse">
       <div class="accordion-inner">
        <?php require_once('./formulaires/intervenants/ajoutIntervenants.php'); ?>
       </div>
@@ -14,7 +14,7 @@
   <div class="accordion-group">
     <div class="accordion-heading">
       <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseModifIntervenant">
-        Modification d'un intervenant
+        <h3>Modification d'un intervenant</h3>
       </a>
     </div>
     <div id="collapseModifIntervenant" class="accordion-body collapse">
@@ -26,7 +26,7 @@
   <div class="accordion-group">
     <div class="accordion-heading">
       <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseSuppressionIntervenant">
-        Suppression d'un intervenant
+        <h3>Suppression d'un intervenant</h3>
       </a>
     </div>
     <div id="collapseSuppressionIntervenant" class="accordion-body collapse">
