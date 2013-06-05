@@ -157,11 +157,11 @@
               <thead>
         <tr>
             <th>&nbsp;</th>
-            <th width="20%">Sunday</th>
-            <th width="20%">Monday</th>
-            <th width="20%">Tuesday</th>
-            <th width="20%">Wednesday</th>
-            <th width="20%">Thursday</th>
+            <th width="20%">Lundi</th>
+            <th width="20%">Mardi</th>
+            <th width="20%">Mercredi</th>
+            <th width="20%">Jeudi</th>
+            <th width="20%">Vendredi</th>
         </tr>
     </thead>
     <tbody>
@@ -601,11 +601,11 @@
               <thead>
         <tr>
             <th>&nbsp;</th>
-            <th width="20%">Sunday</th>
-            <th width="20%">Monday</th>
-            <th width="20%">Tuesday</th>
-            <th width="20%">Wednesday</th>
-            <th width="20%">Thursday</th>
+            <th width="20%">Lundi</th>
+            <th width="20%">Mardi</th>
+            <th width="20%">Mercredi</th>
+            <th width="20%">Jeudi</th>
+            <th width="20%">Vendredi</th>
         </tr>
     </thead>
     <tbody>
