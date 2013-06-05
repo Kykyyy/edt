@@ -8,15 +8,18 @@ if(!empty($_POST['id']) && !empty($_POST['pass']))
 {  
 	 
 	// Connexion à la base  
-	
-	$requete = "SELECT * FROM client WHERE mail = '".$_POST['id']."' and password = '".$_POST['pass']."'";
 
+	$requete = "SELECT * FROM user, type_poste WHERE login = '".$_POST['id']."' AND mdp = '".$_POST['pass']."' AND id_numtypeposte = '0'";
 
-
+	/*
 	$query = $db->prepare($requete);
 	$query->execute();
 	$result = $query->fetch(PDO::FETCH_OBJ); 
+	*/
 
+	$res=mysql_query($requete);
+	if(!$res) echo "<h2>Erreur de selection \n n",mysql_errno()," : ",mysql_error()."</h2>";
+		$result=mysql_fetch_assoc($res);	
 
 
 	if (empty($result) || !sizeof($result)) // Login / Mot de passe invalide  
