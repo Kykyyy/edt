@@ -1,10 +1,7 @@
-
-<!DOCTYPE html>
-
 <?php 
 session_start();
 ?>
-
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -46,18 +43,7 @@ session_start();
             <span class="icon-bar"></span>
           </button>
           <a class="brand" href="#">EDT MIAGE NANTERRE</a>
-          <div class="nav-collapse collapse">
-
-             <?php 
-              if( $_SESSION['connexion'] != 'success'){
-
-                var_dump($_SESSION);
-              
-                   // echo("<p class='navbar-text pull-right'>Connecté en tant que <a href='#' class='navbar-link'>".$_SESSION['user_data']['nom_u']." ".$_SESSION['user_data']['prenom_u']."</a></p>");
-
-              }
-            ?>
-            
+          <div class="nav-collapse collapse">    
             <ul class="nav">
               <li class="active">
                 <a href="#">Home</a>
@@ -85,7 +71,7 @@ session_start();
                 <a href="#contact">Contact</a>
               </li>
                 <li>
-                <a href="#logout">Déconnexion</a>
+                <a href="./vue/deconnexion.php">Déconnexion</a>
               </li>
             </ul>
             <?php 
@@ -93,6 +79,7 @@ session_start();
  
                 require('./composants/formLogin.php');
               }
+              else echo("<p class='navbar-text pull-right'>Connecté en tant que <a href='#' class='navbar-link'>".strtoupper($_SESSION['user_data']['nom_u'])." ".ucfirst($_SESSION['user_data']['prenom_u'])."</a></p>");
             ?>
           </div><!--/.nav-collapse -->
         </div>
@@ -126,13 +113,11 @@ session_start();
                   </div>
                 </div>
                 <?php 
-                if( $_SESSION != NULL && $_SESSION['connexion'] == 'success' && $_SESSION['admin'] == true){
+                if( $_SESSION != NULL && $_SESSION['connexion'] == 'success' &&  $_SESSION['admin'] == true){
  
                     require('./composants/menuGestion.php');
  
                 }
-
- 
                 ?>
                 
               </div>
