@@ -1,0 +1,1588 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{ margin:0; padding:0; }
+
+body {
+	background-image:url(../image/background.png);
+}
+
+#header {
+	background-image:url(../image/header.png);
+	background-repeat: repeat-x;
+	float: left;
+	height: 180px;
+	width: 100%;
+}
+
+#titre {
+	float: left;
+	margin: 4% 60% 0% 38%;
+	width: 40%;
+}
+
+#titre h3 {
+	color: white;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+
+#conteneur{
+	width: 400px;
+	height: 300px;
+	border: 1px solid #333;
+	margin: 0 auto;
+	background: #FFF;
+	text-align: center;
+	}
+#conteneur2{
+	margin-left:auto;
+	margin-right:auto;
+	width:20em;
+	height:20em;
+}
+#big1{
+opacity:0.5;
+}
+#big2{
+opacity:1;
+}
+
+    
+.modal_window {
+	z-index: 1;
+    position:absolute; 
+    display:none;   
+    color:black;
+	padding:50px;
+	border:2px solid grey;
+	background:#d1e2ff;
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+	border-radius:10px;
+}
+    
+#modal_window{
+    padding:50px;
+    border:1px solid gray;
+    background: #d1e2ff;
+    color:black;
+	border-radius : 10px;
+}
+
+/*.modal_window2{
+position:absolute; 
+display:none; 
+color:white;
+padding:50px;
+border:2px solid gray;
+background: #d1e2ff;
+color:black;
+border-radius : 10px;
+font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+z-index:12;
+}*/
+
+#mask{
+position:absolute; 
+top:0px; 
+left:-32px; 
+height:185%; 
+width:102.6%;
+display:none; 
+background-color: #000;
+z-index:1;
+}
+
+
+/*
+#mask{
+position:absolute; 
+top:0px; 
+left:-32px; 
+height:185%; 
+width:100%;
+display:none; 
+background-color: #000;
+z-index:11;
+}
+
+.modal_window{
+position:absolute; 
+display:none; 
+color:white;
+padding:50px;
+border:2px solid gray;
+background: #d1e2ff;
+color:black;
+border-radius : 10px;
+font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+z-index:12;
+}
+
+
+#modal_window{
+padding:50px;
+border:1px solid gray;
+background: #d1e2ff;
+color:black;
+border-radius : 10px;
+}
+*/
+.close_modal{
+	margin-left:2em;
+}
+
+/*
+#modal_window2{
+        position:absolute; 
+        display:none;
+        color:white;
+		padding:50px;
+        border:1px solid gray;
+        background: #d1e2ff;
+        color:black;
+		border-radius : 10px;
+}
+    
+#modal_window3{
+        position:absolute; 
+        display:none; 
+        color:white;
+		padding:50px;
+        border:1px solid gray;
+        background: #d1e2ff;
+        color:black;
+		border-radius : 10px;
+}
+*/
+    
+	
+/*.activate_modal{
+	background-image:url(../IMAGE%20FINAL/gagnerjeton.png);
+	border-radius:28px;
+	height:43px;
+	width:143px;
+	margin-top:2em;
+	margin-left:17em;
+	margin-bottom:2em;
+	box-shadow:1 1px 1 #a1dcd2, 1 1 6px #a1dcd2, 1 1 30px #a1dcd2;
+}*/
+
+.activate_modal2{
+	background-image:url(../image/gagnerjeton.png);
+	border-radius:28px;
+	height:43px;
+	width:143px;
+	margin-top:2em;
+	margin-left:17em;
+	margin-bottom:2em;
+	box-shadow:1 1px 1 #a1dcd2, 1 1 6px #a1dcd2, 1 1 30px #a1dcd2;
+}
+
+#titre1 {
+	font-size:20px;
+	color:#cc3467;
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+	padding-left:1em;
+}
+
+#titre1content {
+	float:left;
+	background-color:#D7D7FB;
+	border-bottom:4px solid #cc3467;
+	border-top:4px solid #b7b1f1;
+	width:45.5em;
+	border-radius:5px;	
+	box-shadow:0 0 4px #b7b1f1, 0 0 4px #b7b1f1, 0 0 4px #b7b1f1;
+	height:2.3em;
+	margin-left:6.5em;
+	margin-top:3em;	
+}
+
+#titre2content {
+	float:left;
+	background-color:#D7D7FB;
+	border-bottom:4px solid #cc3467;
+	border-top:4px solid #b7b1f1;
+	width:55em;
+	border-radius:5px;	
+	box-shadow:0 0 4px #b7b1f1, 0 0 4px #b7b1f1, 0 0 4px #b7b1f1;
+	height:2.3em;
+	margin-left:2em;
+	margin-top:1em;	
+}
+
+#titre2 {
+	margin-left:0;
+	text-align:center;
+	margin-top:1em;
+	font-size:20px;
+	color:#cc3467;
+	font:lighter;
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+	background-color:#D7D7FB;
+	border-radius:5px;	
+	box-shadow:0 0 4px #cc3366, 0 0 4px #cc3366, 0 0 4px #cc3366;
+	border-bottom:3px solid #cc3467;
+	border-top:3px solid #cc3467;
+}
+
+
+
+/*.titre2 {
+	color:#d1e2ff;
+	margin-top:20px;
+	text-align:center;
+	border-bottom:1px solid white;
+	width:31em;
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+}*/
+
+#titre3 {
+	text-align:center;
+	margin-top:1em;
+	font-size:20px;
+	font-family:Verdana, Geneva, sans-serif;
+	color:#666;
+	font:lighter;
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+	background-color:#D7D7FB;
+	border-radius:5px;	
+	box-shadow:0 0 4px #cc3366, 0 0 4px #cc3366, 0 0 4px #cc3366;
+	border-bottom:3px solid #cc3467;
+	border-top:3px solid #cc3467;
+}
+
+ 
+#titre4 {
+
+	margin-left:5em;
+	margin-top:0em;
+}
+
+#titre5 {
+	float:left;
+	width:20em;
+	border-radius:5px;	
+	text-shadow:0 0 4px #b7b1f1, 0 0 4px #b7b1f1, 0 0 4px #b7b1f1;
+	margin-left:10em;
+	margin-top:1em;	
+	font-size:20px;
+	color:#cc3467;
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+	padding-left:1em;
+}
+
+#infolegale{
+	float:left;
+	margin-top:4em;
+	margin-left:0.5em;
+	height:2em;
+	width:25em;
+	padding-bottom:0.5em;
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+#formulaireconnex {
+	margin-top:	91px;
+	margin-left: 235px;
+}
+
+.inputtext0 {
+    -moz-transition: opacity 0.1s ease 0s, font-size 0.1s ease 0s;
+    -moz-user-select: none;
+    color: #642b2b;
+    cursor: text;
+    font-size: 13px;
+    line-height: 15px;
+    margin-right: 10px;
+    padding: 4px;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+    white-space: nowrap;
+    z-index: 1;
+	box-shadow:0 1px 0 rgba(0, 0, 0, 0.6), 0 0 6px #8FB5C8, 0 0 10px rgba(143, 181, 200, 0.7);
+}
+
+.inputtext1 {
+	margin-bottom: 20px;
+}
+
+.connexion {
+	-moz-transition: opacity ls ease 0s;
+	 line-height: 1px;
+	box-shadow:0 1px 0 rgba(0, 0, 0, 0.6), 0 0 6px #8FB5C8, 0 0 5px rgba(143, 181, 200, 0.7);
+	color:#642B2B;
+	background-color:#CDBD9D;
+	height:25px;
+	width:7em;
+	margin-left:10px;
+	border:1px inset;
+	text-align:center;
+	white-space:nowrap;
+	margin-top:1px;
+	font-family:"Century Gothic",Helvetica, Arial, sans-serif;
+	font-size:12px;
+}
+
+.connexion2 {
+	margin-left:3.2em;
+}
+
+.lab {
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+button:hover.connexion {
+	background-color:#642B2B;
+	color: #CDBD9D;
+}
+
+#onglets {
+	height: 6em;
+	margin-left: auto;
+	margin-right: auto;
+	position: absolute;
+	top: 136px;
+	width: 100%;
+}
+
+#onglets2 {
+	margin-left:auto;
+	margin-right:auto;
+	width:100%;
+	height:6em;
+	float:	left;
+	margin-top: 136px;
+}
+
+#global {
+	margin-left:94px;
+	margin-right:94px;
+	background-color:#2D3138;
+	border: 2px inset #5C2727;
+	float: left;
+
+}
+
+#global2 {
+	margin-left:auto;
+	margin-right:auto;
+	width:70em;
+	min-height:19em;	
+	background-color:#d1e2ff;
+	border: 2px inset;
+	margin-top:2em;
+}
+#global3 {
+	margin-left:auto;
+	margin-right:auto;
+	width:70em;
+	height:40em;
+	background-color:#d1e2ff;
+	border: 2px inset;
+	margin-top:2em;
+}
+
+#top {
+	float:left;
+	height:306px;
+	width: 100%;
+}
+
+#bottom {
+float: left; width: 100%; margin-top: 10px;
+}
+
+#top2 {
+	float:left;
+	width:100%;
+	background-color: #2e333a;
+}
+
+#top2 legend{
+	color: white;
+	font-family:"Century Gothic",Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	margin-top: 5px;
+	margin-left: 5px;
+}
+
+#middletop {
+	float:left;
+	background-color:#F6941E;
+	min-height:18em;
+	width:48.5em;
+	margin-left:1em;
+	border-radius:10px;
+}
+
+#middletopgratuit {
+	float:left;
+	background-color:#F6941E;
+	min-height:20em;
+	width:48.5em;
+	margin-left:1em;
+	margin-top:1em;
+	border-radius:10px;
+}
+
+#jeugratos {
+	width:31em;
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+	-moz-transition: opacity ls ease 0s;
+	 line-height: 20px;
+	box-shadow:0 1px 0 rgba(0, 0, 0, 0.6), 0 0 6px #8FB5C8, 0 0 30px rgba(143, 181, 200, 0.7);
+	color:#0064FE;
+	background-color:white;
+	opacity:0.8;
+	border-radius:10px;
+	text-align:center;
+	height:1.3em;
+	padding-top:0.4em;
+	
+}
+#middlebottom {
+	float:left;
+	background-color:#8DC63E;
+	min-height:18em;
+	width:48.5em;
+	margin-top:1em;
+	border-radius:10px;
+	margin-left:1em;
+}
+
+#bottomleft {
+	float:left;
+	background-color:#000;
+	height:7em;
+	width:30em;
+	margin-top:1em;
+	margin-left:1em;
+	border-radius:10px;
+}
+
+
+#rightcontent {
+	background-color: #2D3138;
+	border-left: 2px inset #5C2727;
+	color: white;
+	float: left;
+	margin-left: 2px;
+	padding: 10px 10px 15px;
+	width: 25.7%;
+}
+
+#rejoindre {
+	margin: 0 10px;
+	text-align: center;
+}
+
+#supr {
+	float: left;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	margin-left: 420px;
+}
+
+#formulaireinscri {
+	border: 1px inset white;
+	margin-top: 10px;
+	padding: 10px;
+}
+
+#formulaireSuppr {
+	float: left;
+	margin: 30px 355px;
+}
+
+#formulaireSuppr form {
+	display: inline;
+}
+
+#formulaireAjout {
+	float: left;
+	margin: 30px 80px 30px 300px;
+}
+
+#formulaireAjout form {
+	display: inline;
+}
+
+#ligneResa {
+	float: left;
+	margin-left: 110px;
+}
+
+#reserv {
+	margin-left: 46em;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.titre
+{
+	font-family:"Century Gothic",Helvetica, Arial, sans-serif;
+	font-size:18px;
+	margin-top:-0.5em;
+	outline:medium none;
+	text-decoration:none;
+}
+
+#logo{
+	background-color: #2D3138;
+
+border-left: 2px inset #5C2727;
+
+float: left;
+height: 175px;
+margin-left: 2px;
+width: 27.35%;
+}
+
+#logo img {
+	margin-left: 90px;
+	margin-top: 60px;
+}
+
+.menu,
+.menu ul,
+.menu li,
+.menu a {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+	float:left;
+	z-index: 10;
+}
+ 
+.menu {
+    height: 40px;
+    /*width: 635px;*/
+    width: 810px; 
+	float:left;
+	margin-left:13%;
+}
+
+.menu ul {
+    position: absolute;
+    top: 43px;
+    left: 0;
+ 
+    opacity: 0;
+    background: #2A2E34;
+ 
+    -webkit-border-radius: 0 0 5px 5px;
+    -moz-border-radius: 0 0 5px 5px;
+    border-radius: 0 0 5px 5px;
+ 
+    -webkit-transition: opacity .25s ease .1s;
+    -moz-transition: opacity .25s ease .1s;
+    -o-transition: opacity .25s ease .1s;
+    -ms-transition: opacity .25s ease .1s;
+    transition: opacity .25s ease .1s;
+}
+ 
+.menu li:hover > ul { opacity: 1; }
+ 
+.menu ul li {
+    height: 0;
+    overflow: hidden;
+    padding: 0;
+ 
+    -webkit-transition: height .25s ease .1s;
+    -moz-transition: height .25s ease .1s;
+    -o-transition: height .25s ease .1s;
+    -ms-transition: height .25s ease .1s;
+    transition: height .25s ease .1s;
+}
+ 
+.menu li:hover > ul li {
+    height: 36px;
+    overflow: visible;
+    padding: 0;
+}
+
+
+.menu ul li a {
+    padding: 4px 0 4px 10px;
+    margin: 0;
+    border: none;
+    border-bottom: 1px solid #353539;
+}
+
+.menu .first li a {
+	width: 126px;
+}
+
+.menu .second li a, .menu .third li a {
+	width: 133px;
+}
+
+.menu .fourth li a {
+	width: 196px;
+}
+ 
+.menu ul li:last-child a { border: none; }
+
+ 
+.menu li {
+    position: relative;
+    list-style: none;
+    float: left;
+    display: block;
+    height: 40px;
+}
+
+.menu li a {
+    display: block;
+    padding: 0 50px;
+    margin: 6px 0;
+    line-height: 28px;
+    text-decoration: none;
+ 
+    border-right: 1px solid #4f5058;
+ 
+    font-family:"Century Gothic",Helvetica, Arial, sans-serif;
+    font-size: 15px;
+ 
+    color: #f3f3f3;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.6);
+ 
+    -webkit-transition: color .2s ease-in-out;
+    -moz-transition: color .2s ease-in-out;
+    -o-transition: color .2s ease-in-out;
+    -ms-transition: color .2s ease-in-out;
+    transition: color .2s ease-in-out;
+}
+ 
+.menu li:hover > a { color: #d7bc8a; }
+
+#ongletaccueil{
+padding-right:18px;
+}
+
+#ongletjeux{
+padding-left:13px;
+}
+
+#ongletcadeaux{
+padding-right:4px;
+}
+
+#ongletjeton{
+padding-left:7px;
+}
+/*
+#ongletjeton{
+	padding-left:4px;
+}
+*/
+
+#ongletprofil{
+padding-left:12px;
+}
+
+#ongletaide{
+padding-left:12px;
+}
+
+#ongletforum{
+padding-left: 10px;
+}
+
+#infocompte {
+	/*float:left;
+	width:18.3em;
+	height:6em;
+	margin-left:1em;*/
+	float: right;
+	width:22%;
+}
+
+#pseudocompte {
+	float:left;
+	margin: 10px;
+	font-family:"Century Gothic",Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	color:#d8c6a6;
+}
+
+#deconnexion {
+	margin-left:165px;
+	margin-top:-1.5em;
+}
+
+
+/*SLIDE*/
+
+a:link, a:visited {
+	color : #fff;
+	text-decoration : none;
+}
+
+a img {
+	border : 0;
+}
+
+div.wrap {
+	width :48.5em;
+	text-align : left;
+}
+
+div#header2 div#slide-holder {
+	position : absolute;
+}
+
+div#header2 div#slide-holder  {
+	width : 59%;
+	height : 19em;
+	overflow : hidden;
+	position : absolute;
+}
+
+#slide-runner {
+	height : 19em;	
+	
+}
+div#header2 div#slide-holder img {
+	margin : 0;
+	display : none;
+	position : absolute;
+}
+
+div#header2 div#slide-holder div#slide-controls {
+	left : 0;
+	top:0.5em;
+	bottom : 57em;
+	width : 100%;
+	height : 3em;
+	display : none;
+	position : absolute;
+	background : url(../image/slide-bg.png) 0 0;
+	opacity:0.8;
+}
+
+div#header2 div#slide-holder div#slide-controls p.text {
+	float : left;
+	color : #fff;
+	display : inline;
+	font-size : 10px;
+	line-height : 16px;
+	margin : 15px 0 0 20px;
+	text-transform : uppercase;
+}
+
+div#header2 div#slide-holder div#slide-controls p#slide-nav {
+	float : right;
+	height : 24px;
+	display : inline;
+	margin : 11px 15px 0 0;
+}
+
+div#header2 div#slide-holder div#slide-controls p#slide-nav a {
+	float : left;
+	width : 24px;
+	height : 24px;
+	display : inline;
+	font-size : 11px;
+	margin : 0 5px 0 0;
+	line-height : 24px;
+	font-weight : bold;
+	text-align : center;
+	text-decoration : none;
+	background-position : 0 0;
+	background-repeat : no-repeat;
+}
+
+div#header2 div#slide-holder div#slide-controls p#slide-nav a.on {
+	background-position : 0 -24px;
+}
+
+div#header2 div#slide-holder div#slide-controls p#slide-nav a {
+	background-image : url(../image/silde-nav.png);
+}
+
+div#nav ul li a {
+	background : url(../image/nav.png) no-repeat;
+}
+
+.error-message{
+	color:#FFFFFF;
+	font-style:italic;
+}
+
+/*FIN SLIDE*/
+
+#footer {
+	background-image: url(../image/footer.png);
+	bottom: 0;
+color: white;
+float: left;
+font-family: "Century Gothic",Helvetica,Arial,sans-serif;
+font-size: 11px;
+margin-top: 20px;
+padding: 10px 0;
+text-align: center;
+top: 1000px;
+width: 100%;
+}
+
+.pasencoreinscrit {
+	text-decoration:none;
+	color:#D8C6A6 !important;
+	opacity:0.6;
+	font-size:16px;
+	margin-top: 9px;
+	float: left;
+	font-family:"Century Gothic",Helvetica, Arial, sans-serif;
+}
+
+.pasencoreinscrit:hover {
+	text-decoration:underline;
+	opacity:1;
+}
+
+img {
+    border: medium none;
+}
+
+#avantfinforum {
+	height:5em;
+}
+
+#vuePageTitle{
+	background-image:url(../image/vitrinecadeaux2.png);
+	width:45em;
+	height:7em;
+	margin-top:1em;
+	margin-left:3em;
+}
+#vuePageTitle2{
+	background-image:url(../image/Aide.png);
+	width:45em;
+	height:7em;
+	margin-top:1em;
+	margin-left:2.5em;
+}
+#leftcontent{
+	float:left;
+	background-color: #2D3138;
+	width: 70%;
+	border-right: 2px inset #5C2727;
+}
+
+#leftcontent legend{
+	color: white;
+	font-family:"Century Gothic",Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	margin-top: 5px;
+	margin-left: 5px;
+}
+
+#leftcontent #ListeCadeaux{
+	margin-top:3em;
+}
+
+
+
+#ListeCadeaux li{
+	border-right:1px solid grey;
+	border-top:1px solid grey;
+	border-left:1px solid grey;
+	border-bottom:1px solid grey;
+	list-style-type:none;
+	float:left;
+	height:7.3em;
+}
+
+#ListeGagnants li{
+	border-right:1px solid grey;
+	border-top:1px solid grey;
+	border-left:1px solid grey;
+	border-bottom:2px solid grey;
+	list-style-type:none;
+	float:left;
+	height:9.75em;
+}
+
+#onglet1 {
+	margin-left:0.5em;
+	float: left;
+}
+
+#onglet2 {
+	display: none;
+	margin-top:-5em;
+}
+
+#onglet2 li {
+	position: relative;
+	float: left;
+	list-style: none;
+	padding: 2px 5px 7px;
+	margin-right: 3px;
+	border: 3px solid #666;
+	cursor: pointer;
+	color: #000;
+	border-radius: 5px;
+	background-color:#6B9EF5;
+	margin-top:5em;
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+#onglet2 .actif {
+	border-bottom: none;
+	font-weight: bold;
+	background-color:#E0E0E0;
+}
+
+#onglet {
+	width: 70.5em;
+	border-radius: 10px;
+	height: 5em;
+	margin-left: auto;
+	margin-right: auto;
+	float:left;
+	margin-top: 136px;
+}
+
+#onglet3 {
+	margin-left: 7em;
+	margin-top:2em;
+	float: left;
+}
+
+#onglet4 {
+	display: none;
+	margin-left: -1em;
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+#onglet4 li {
+	position: relative;
+	float: left;
+	list-style: none;
+	padding: 2px 5px 7px;
+	margin-right: 3px;
+	border: 3px solid #666;
+	cursor: pointer;
+	color: #0064FE;
+	border-radius: 5px;
+	background-color:#D7D7FB;
+	height:1.5em;
+}
+
+#onglet4 .actif {
+	border-bottom: none;
+	font-weight: bold;
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+	background-color:#F5D6E0;
+	box-shadow:0 0 4px #cc3366, 0 0 4px #cc3366, 0 0 4px #cc3366;
+	
+}
+
+#contenu {
+	clear: both;
+	color: #000;
+	overflow: hidden;
+	border:5px solid #666;
+	margin-left:1em;
+	margin-right:1.9em;
+	border-radius: 15px;
+	padding: 10px;
+	background-color:#CC3366;
+}
+
+#contenu2 {
+	clear: both;
+	position:relative;
+	margin: 0 20px;
+	padding: 10px;
+	border: 7px solid #666;
+	top: -6px;
+	color: #000;
+	/*width: 65em;*/
+	width:50em;
+	overflow: hidden;
+	border-radius: 15px;
+	background-color:#CC3366;
+}
+
+#contenu3 {
+	background-color:#CC3366;
+	height:19em;
+	width:58em;
+	margin-left:5em;
+	border-radius:10px;
+	margin-top:3em;
+	box-shadow:4px 4px 4px #b7b1f1, 4px 4px 4px #b7b1f1, 4px 4px 4px #b7b1f1;
+}
+
+#paypal {
+	float:left;
+	background-image:url(../image/offre.png);
+	height:8.5em;
+	width:25em;
+	margin-left:32em;
+	margin-top:-8.5em;
+}
+.paypal {
+	height:8em;
+}
+
+.btnacheter {
+	padding:0;
+	height:4.5em;
+	width:12em;
+	margin-top:12.5em;
+	margin-left:-2.5em;
+}
+
+#offre {
+	float:left;
+	margin-left:6.5em;
+	margin-top:3em;
+	background-image:url(../image/rechargepay1.jpg);
+	height:8.5em;
+	width:25em;
+}
+
+#offre2 {
+	float:left;
+	height:8.5em;
+	width:25em;
+	margin-left:2em;
+	margin-top:1em;
+	box-shadow:0 0 7px #cc3366, 0 0 7px #cc3366, 0 0 7px #cc3366;
+	background-image:url(../image/rechargepay2.jpg);
+}
+
+
+#offre3 {
+	float:left;
+	margin-left:2em;
+	margin-top:1em;
+	background-image:url(../image/rechargepay1.jpg);
+	height:8.5em;
+	width:25em;
+	border-radius:5px;
+}
+
+#titre1content {
+	float:left;
+	background-color:#D7D7FB;
+	border-bottom:4px solid #cc3467;
+	border-top:4px solid #b7b1f1;
+	width:45.5em;
+	border-radius:5px;	
+	box-shadow:0 0 4px #b7b1f1, 0 0 4px #b7b1f1, 0 0 4px #b7b1f1;
+	height:2.3em;
+	margin-left:6.5em;
+	margin-top:3em;	
+}
+
+#titre2content {
+	float:left;
+	background-color:#D7D7FB;
+	border-bottom:4px solid #cc3467;
+	border-top:4px solid #b7b1f1;
+	width:55em;
+	border-radius:5px;	
+	box-shadow:0 0 4px #b7b1f1, 0 0 4px #b7b1f1, 0 0 4px #b7b1f1;
+	height:2.3em;
+	margin-left:2em;
+	margin-top:1em;	
+}
+
+#contenu #ListeCadeaux{
+	margin:0;
+	padding:0;
+}
+
+#contenu #ListeGagnants{
+	margin:0;
+	padding:0;
+}
+
+#avantfinforum {
+	height:5em;
+}
+
+#message {
+	height:15em;
+	width:53em;
+	margin-left:8em;
+}
+
+#tabmessage {
+	border:thin;
+	margin-top:3em;
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+
+}
+
+.tabheader {
+	border:thin;
+	height:1em;
+	width:5em;
+	background-color:#cc3467;
+	color:#d1e2ff;
+	font-size:20px;
+	font-variant:small-caps;
+}
+
+.tabligne1 {
+
+	width:5em;
+	background-color:#f94e4e;
+	text-align:center;
+	border:thin;
+	height:3em;
+
+}
+
+.tabligne2 {
+	width:29em;
+	background-color:#f94e4e;
+	text-align:center;
+	border:thin;
+	height:3em;
+	font:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+
+}
+
+.tabligne3 {
+	width:12em;
+	background-color:#f94e4e;
+	text-align:center;
+	border:thin;
+	height:3em;
+}
+
+.tab {
+	background-color:#cc3366;
+	margin-top:3em;
+	box-shadow:0 1px 0 rgba(0, 0, 0, 0.6), 0 0 6px #8FB5C8, 0 0 30px rgba(143, 181, 200, 0.7);
+	border-radius: 10px;
+	color:#d1eff2;
+}
+
+.tab2 {
+	color:#d1eff2;
+	box-shadow:0 1px 0 rgba(0, 0, 0, 0.6), 0 0 6px #8FB5C8, 0 0 30px rgba(143, 181, 200, 0.7);	
+	border-radius: 10px;
+	background-color:#cc3356;
+}
+
+.tab3 {
+	
+	margin-top:0em;
+	box-shadow:0 1px 0 rgba(0, 0, 0, 0.6), 0 0 6px #8FB5C8, 0 0 30px rgba(143, 181, 200, 0.7);	
+	color:#d1eff2;
+	border-radius: 10px;
+	background-color:#cc3366;	
+}
+
+.bo {
+	background-color:#7EC8EB;
+	border: 3px solid;
+	border-collapse: collapse;
+	height: 2em;
+}
+
+.ba {
+	background-color:#FF3C9D;
+	border: 3px solid;
+	border-collapse: collapse;
+	width: 17em;
+	height: 2em;
+}
+.fi {
+	background-color:#FFA6D2;
+	border: 3px solid;
+	border-collapse: collapse;
+	height: 2em;
+}
+
+.lol {
+	background-color:#0CF;
+	border: 3px solid;
+	border-collapse: collapse;
+	border-top: 8em;
+	text-align: center;
+	border-radius:5px;
+	border:#d1f2ff;
+	width:44.7em;
+}
+
+.valider {
+	-moz-transition: opacity ls ease 0s;
+	 line-height: 20px;
+	box-shadow:0 1px 0 rgba(0, 0, 0, 0.6), 0 0 6px #8FB5C8, 0 0 30px rgba(143, 181, 200, 0.7);
+	color:#0064FE;
+	background-color:white;
+	opacity:0.8;
+	height:3em;
+	min-width:7em;
+	margin-left:33em;
+	margin-top:-2em;
+	border:2px inset;
+	text-align:center;
+	white-space:nowrap;
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size:15px;
+	padding-left:0.4em;
+	padding-bottom:0.3em;
+	font-weight:bold;
+	border-radius:10px;
+}
+
+button:hover.valider {
+	background-color:#d1e2ff;
+}
+
+#modal_window button:hover.close_modal, #modal_window2 button:hover.close_modal, #modal_window3 button:hover.close_modal, #modal_window4 button:hover.close_modal, #modal_window5 button:hover.close_modal, #modal_window6 button:hover.close_modal, #modal_window7 button:hover.close_modal, #modal_window8 button:hover.close_modal, #modal_window9 button:hover.close_modal {
+	background-color:#d1e2ff;
+}
+
+.titre2 {
+	width:31em;
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+	-moz-transition: opacity ls ease 0s;
+	 line-height: 20px;
+	box-shadow:0 1px 0 rgba(0, 0, 0, 0.6), 0 0 6px #8FB5C8, 0 0 30px rgba(143, 181, 200, 0.7);
+	color:#0064FE;
+	background-color:white;
+	opacity:0.8;
+	border-radius:10px;
+	text-align:center;
+	height:1.3em;
+	padding-top:0.4em;
+}
+
+/*.ligne {
+	background-color:#666;
+	height:-0.5em;
+	width:90em;
+}*/
+
+.item2 {
+	margin-left:3em;
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+	color:#d1e2ff;
+}
+
+.decavote {
+	width:50em;
+	margin-left:11em;
+}
+
+.quiz {
+	width:50em;
+	margin-left:11em;
+}
+
+.vote {
+	width:50em;
+	margin-left:11em;
+}
+
+.rang {
+	width:40em;
+	height:5em;
+}
+
+.iconedev {
+	height:2em;
+	width:2em;
+	vertical-align:middle;
+	margin-right:5px;
+	margin-left:5px;
+	}
+	
+.iconequiz {
+	height:4em;
+	width:4em;
+	margin-right:5px;
+	}
+	
+#banniere {
+	background-image:url(../image/ObtenirJetons.png);
+	height:6em;
+	width:46.5em;
+	margin-left:13em;
+}
+#banniere2 {
+	background-image:url(../image/Profil.png);
+	height:6em;
+	width:46.5em;
+	margin-left:12em;
+}
+
+
+#imgCB {
+	height:3.4em;
+	width:5.8em;
+}
+
+#modal_window2, #modal_window3, #modal_window4, #modal_window5, #modal_window6, #modal_window7, #modal_window8, #modal_window9{
+z-index:1;
+position:absolute;
+display:none; 
+margin-top:10em;
+padding:50px;
+border:2px solid #CC3366;
+background: #d1e2ff;
+color:black;
+border-radius : 10px;
+font:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+width:33em;
+}
+
+#modal_window .close_modal, #modal_window2 .close_modal , #modal_window3 .close_modal, #modal_window4 .close_modal, #modal_window5 .close_modal, #modal_window6 .close_modal , #modal_window7 .close_modal, #modal_window8 .close_modal, #modal_window9 .close_modal{
+	margin-right:2em;
+	margin-top:2em;
+	-moz-transition: opacity ls ease 0s;
+	line-height: 20px;
+	box-shadow:0 1px 0 rgba(0, 0, 0, 0.6), 0 0 6px #8FB5C8, 0 0 30px rgba(143, 181, 200, 0.7);
+	color:#0064FE;
+	background-color:white;
+	opacity:0.8;
+	height:3em;
+	min-width:7em;
+	border:2px inset;
+	text-align:center;
+	white-space:nowrap;
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size:15px;
+	padding-left:0.4em;
+	padding-bottom:0.3em;
+	font-weight:bold;
+	border-radius:10px;
+}
+
+#modal_window2 p , #modal_window3 p, #modal_window4 p, #modal_window5 p, #modal_window6 p , #modal_window7 p, #modal_window8 p, #modal_window9 p{
+	font-size:large;
+}
+
+#modal_window9 h4{
+	color:#CC3366;
+}
+
+
+#modal_window10, #modal_window11, #modal_window12{
+z-index:1;
+position:absolute;
+display:none; 
+padding:50px;
+border:2px solid gray;
+background: #d1e2ff;
+color:black;
+border-radius : 10px;
+margin-top:10em;
+font:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+.vuePage{
+	background-color:#cc3366;
+	height:49.3em;
+	width:47em;
+	border-radius:10px;
+	margin-left:2em;
+}
+
+.vuePage a{
+	color:white;
+}
+
+h2{
+	margin-left:1em;
+	color:#d1e2ff;
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+#faq:hover {
+	color:yellow;
+	text-decoration:underline;
+}
+
+.RubriqueAide{
+	margin-left:2em;
+	color:#d1e2ff;
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+.sousRubrique{
+	text-decoration:underline;
+	color:#FFF;
+}
+
+
+#scContact{
+	margin-left:2em;
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+#scContact h4{
+	color: #D1E2FF;
+	
+}
+
+.titreSousRubrique {
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+.aaide{
+	padding-top:1em;
+	text-align:center;
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size:18px;
+	color:#d1e2ff;
+}
+
+a.activate_modal:hover {
+	color:yellow;
+	text-decoration:underline;
+}
+
+.aaide2{
+	
+	text-align:center;
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size:12px;
+}
+
+.aide, .aidee{
+	width:350px;
+}
+	
+.aideee{
+	width:350px;
+	height:150px;
+	min-height:150px;
+	min-width:350px;
+	max-width:350px;
+	max-height:300px;
+}
+
+#formValide{
+	margin-left:8em;
+	margin-top:1em;
+}
+
+#formValide:hover{
+	opacity:0.8;
+}
+
+.titrejeu{
+	margin-left:1em;
+	font-family:"Adobe Caslon Pro Bold";
+	color:#C36;
+	border-bottom:1px solid #CCCCCC;
+	font-weight:bold;
+	width:33em;
+}
+
+#content2 {
+	float:left;
+	width: 40em;
+	min-height: 40em;
+	background-color:#C36;
+	margin-left:14em;
+	margin-right:1em;
+	margin-top:4.5em;
+	border-radius:10px;
+	padding-left:1em;
+}
+
+.infojeu {
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+	margin-left:2em;
+	margin-top:-1em;
+	font-weight:bold;
+}
+
+.overflow{
+	border:1px solid #000000;
+	color:#000000;
+	overflow:auto;
+	height:400px;
+	margin-bottom:10px;
+	padding:10px;
+}
+
+#cadre {
+	border:1px solid #000000;
+	color:#000000;
+}
+
+#form1 {
+	font-family:"Century Gothic",Helvetica, Arial, sans-serif;
+	color:#d1e2ff;
+}
+
+#attention {
+	text-decoration:underline;
+}
+
+#bienvenue {
+	font-family:"Century Gothic",Helvetica, Arial, sans-serif;
+	
+}
+
+#encartpub{
+	background-image:url(../Image/EncartPub.png);
+	height:557px;
+	width:106%;
+	margin-bottom: 20.5%
+}
+
+#lesjeux {
+	margin:auto;
+}
+
+.modal_window #rep{
+	width:250px;
+}
+
+/*TABLEAU DE CONSULTATION*/
+
+#tableau {
+	float: left;
+    font-family: "Century Gothic",Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    margin: 2px 4px;
+    width: 99%;
+    text-align: center;
+    border-collapse: collapse;
+}
+#tableau th {
+    font-size: 13px;
+    font-weight: normal;
+    padding: 8px;
+    background: #b9c9fe url('http://4.bp.blogspot.com/_xDpoN6UfFFY/S-J2gjh1nPI/AAAAAAAACbg/7lNsVpks2oY/s1600/gradhead.png') repeat-x;
+    border-top: 2px solid #d3ddff;
+    border-bottom: 1px solid #fff;
+    color: #039;
+}
+#tableau td {
+    padding: 8px;
+    border-bottom: 1px solid #fff;
+    color: #669;
+    border-top: 1px solid #fff;
+    background: #e8edff url('http://1.bp.blogspot.com/_xDpoN6UfFFY/S-J2f5yBC3I/AAAAAAAACbY/zWXYXsR-w5E/s1600/gradback.png') repeat-x;
+}
+#tableau tfoot tr td {
+    background: #e8edff;
+    font-size: 16px;
+    color: #99c;
+    text-align:center;
+}
+#tableau tbody tr:hover td {
+    background: #d0dafd url('http://4.bp.blogspot.com/_xDpoN6UfFFY/S-J2hsztUzI/AAAAAAAACbo/ztV1CK0RUrE/s1600/gradhover.png') repeat-x;
+    color: #339;
+}
+#tableau a:hover {
+    text-decoration:underline;
+}
