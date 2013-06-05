@@ -4,16 +4,21 @@ session_start();
 $_SESSION['erreur'] = NULL; 
 $_SESSION['connexion'] = NULL; 
 
-if(!empty($_POST['mail']) && !empty($_POST['password'])) 
+if(!empty($_POST['id']) && !empty($_POST['pass'])) 
 {  
 	 
 	// Connexion à la base  
-	require './script.php';
-	$db = connect();
-	$requete = "SELECT * FROM client WHERE mail = '".$_POST['mail']."' and password = '".$_POST['password']."'";
+	
+	$requete = "SELECT * FROM client WHERE mail = '".$_POST['id']."' and password = '".$_POST['pass']."'";
+
+
+
 	$query = $db->prepare($requete);
 	$query->execute();
 	$result = $query->fetch(PDO::FETCH_OBJ); 
+
+
+
 	if (empty($result) || !sizeof($result)) // Login / Mot de passe invalide  
 		{ 
 			$_SESSION['erreur'] = 'Login ou mot de passe non valide'; 
