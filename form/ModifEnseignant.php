@@ -20,10 +20,11 @@ $ligne2=mysql_fetch_array($sql2);
 ?>
 
 
-<head><title>Ajout d'un enseignant</title></head><body>
+<head><title>Modifier enseignant</title></head><body>
 <form action= "<?php echo $_SERVER['PHP_SELF'];?>" method="post"enctype="application/x-www-form-urlencoded">
 <fieldset>
-<legend><b>Ajout d'un enseignant</b></legend><table>
+<legend><b>Modifier enseignant</b></legend><table>
+<input type="hidden" name="id" value = <?php /*echo $_GET['id'];*/ echo "1"?>" size="40" maxlength="30"/> <!-- Champs caché ou l'on met l'id passé en paramètre url -->
 <tr><td>Nom : </td><td><input type="text" name="nom" value = <?php echo $ligne['nom_enseignant']?> size="40" maxlength="30"/></td></tr>
 <tr><td>Prénom : </td><td><input type="text" name="prenom_ens" value = <?php echo $ligne['prenom_ens']?> size="40"maxlength="30"/></td></tr>
 <tr><td>Date de naissance : </td><td><input type="date" name="date" value = <?php echo $ligne['date_naissance_ens'] ?> size="40" maxlength="10"/>
@@ -44,14 +45,7 @@ $ligne2=mysql_fetch_array($sql2);
 <?php
 if(!empty($_POST['nom']) && !empty($_POST['prenom_ens']) && !empty($_POST['date'])&& !empty($_POST['idposte']))
 {
-	$sql = mysql_query("SELECT MAX(id_enseignant) as id_enseignant FROM enseignant");
-	if($sql)
-	{
-		$result = mysql_fetch_array($sql);
-		$id = $result['id_enseignant']+1;
-	}
-	else $id = 1;
-	
+	$id= $_POST['id'];
 	$nom_ens= $_POST['nom'];
 	$prenom_ens=$_POST['prenom_ens'];
 	$date=$_POST['date'];
@@ -61,7 +55,7 @@ if(!empty($_POST['nom']) && !empty($_POST['prenom_ens']) && !empty($_POST['date'
 	// On crée un nouveau enseignant
 	$nouvel_enseignant = new enseignant ($id,$prenom_ens, $nom_ens, $date, $cv, $idposte);
 	// On l'insère dans la table
-	$nouvel_enseignant->insertSQL();
+	$nouvel_enseignant->modifSQL();
 }
 else 
 {

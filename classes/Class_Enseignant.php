@@ -30,7 +30,7 @@ class Enseignant{
 	
 	public function modifSQL() // modifier un objet
 	{
-		$requete = ("UPDATE enseignant SET prenom_ens = '$this->prenom_ens', nom_ens = '$this->nom_ens', date_naissance_ens = '$this->date_naissance_ens', cv = '$this->cv', id_numtypeposte = '$this->id_poste' WHERE id_enseignant ='$this->id_enseignant'");		
+		$requete = ("UPDATE enseignant SET prenom_ens = '$this->prenom_ens', nom_enseignant = '$this->nom_ens', date_naissance_ens = '$this->date_naissance_ens', cv = '$this->cv', id_numtypeposte = '$this->id_poste' WHERE id_enseignant ='$this->id_enseignant'");		
 		mysql_query($requete) or die(mysql_error());
 		echo "<script type=\"text/javascript\">alert('Enseignant n°".$this->id_enseignant." modifié !')</script>";
 	}
@@ -43,7 +43,7 @@ class Enseignant{
 		{
 			$ligne=mysql_fetch_array($sql);
 			$this->prenom_ens = $ligne['prenom_ens'];
-			$this->nom_ens =  $ligne['nom_ens'];
+			$this->nom_ens =  $ligne['nom_enseignant'];
 			$this->date_naissance_ens =  $ligne['date_naissance_ens'];	
 			$this->cv =  $ligne['cv'];
 			$this->id_poste =  $ligne['id_numtypeposte'];

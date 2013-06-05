@@ -82,7 +82,7 @@
             <?php 
               if( ( empty($_SESSION) ) && ( empty($_SESSION['user_data']) )){
  
-                require('./composants/formLogin.html');
+                require('./composants/formLogin.php');
               }
             ?>
           </div><!--/.nav-collapse -->
@@ -120,7 +120,7 @@
  
                 if( ( !empty($_SESSION) ) /*&& ( $_SESSION['user_data']->admin == true)*/ ){
  
-                    require('./composants/menuGestion.html');
+                    require('./composants/menuGestion.php');
  
                 }
  
@@ -136,6 +136,9 @@
             <h1>Bienvenue sur l'emploi du temps de la MIAGE Nanterre!</h1>
             <p>Cet emploi du temps vous permet de consulter les différents créneaux de cours de votre année en cours et des années précédentes.</p>
           </div>
+          <?php
+            include_once('./composants/breadcrump.php');
+            ?>
           <ul class="breadcrumb">
             <li><a href="#">Home</a> <span class="divider">/</span></li>
             <li><a href="#">Consultation</a> <span class="divider">/</span></li>
@@ -153,15 +156,22 @@
     <div id="collapseS1" class="accordion-body collapse in">
       <div class="accordion-inner">
         <table class="calendar table table-bordered table-striped">
-            <caption>Semaine 1</caption>
               <thead>
         <tr>
             <th>&nbsp;</th>
-            <th width="20%">Sunday</th>
+<<<<<<< HEAD
             <th width="20%">Monday</th>
             <th width="20%">Tuesday</th>
             <th width="20%">Wednesday</th>
             <th width="20%">Thursday</th>
+            <th width="20%">Friday</th>
+=======
+            <th width="20%">Lundi</th>
+            <th width="20%">Mardi</th>
+            <th width="20%">Mercredi</th>
+            <th width="20%">Jeudi</th>
+            <th width="20%">Vendredi</th>
+>>>>>>> 166ab6f4db79355d4fbed25a4022f88951c5df80
         </tr>
     </thead>
     <tbody>
@@ -597,15 +607,22 @@
     <div id="collapseS2" class="accordion-body collapse">
       <div class="accordion-inner">
         <table class="calendar table table-bordered table-striped">
-            <caption>Semaine 2</caption>
               <thead>
         <tr>
             <th>&nbsp;</th>
-            <th width="20%">Sunday</th>
+<<<<<<< HEAD
             <th width="20%">Monday</th>
             <th width="20%">Tuesday</th>
             <th width="20%">Wednesday</th>
             <th width="20%">Thursday</th>
+            <th width="20%">Friday</th>
+=======
+            <th width="20%">Lundi</th>
+            <th width="20%">Mardi</th>
+            <th width="20%">Mercredi</th>
+            <th width="20%">Jeudi</th>
+            <th width="20%">Vendredi</th>
+>>>>>>> 166ab6f4db79355d4fbed25a4022f88951c5df80
         </tr>
     </thead>
     <tbody>

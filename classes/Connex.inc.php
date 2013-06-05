@@ -5,7 +5,7 @@ function connex($base,$param)
 	//$idcom=mysql_connect(MYHOST,MYUSER,MYPASS);
 	$idcom=mysql_connect("localhost", "root", "");
 	
-	$idbase=@mysql_select_db($base);
+	$idbase=mysql_select_db($base);
 	if(!$idcom | !$idbase)
 	{
     echo "<script type=text/javascript>";
