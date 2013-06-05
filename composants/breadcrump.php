@@ -22,4 +22,12 @@ for($i=1; $i<count($dChunks); $i++ ){
 	echo('">');
 	echo(str_replace("_" , " " , $prChunks[0]));
 } 
+
 ?>
+
+<ul class="breadcrumb">
+<li><a href="#">Home</a> <span class="divider">/</span></li>
+<li><a href="#">Consultation</a> <span class="divider">/</span></li>
+<li><a href="#">L3 App</a> <span class="divider">/</span></li>
+<li class="active">Semestre 1</li>
+</ul>

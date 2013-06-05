@@ -6,10 +6,10 @@
   </div>
   <div id="collapseTwo" class="accordion-body collapse" style="height: 0px; ">
     <div class="accordion-inner">
-      <li><a href="#">Gestion utilisateurs</a></li>
-      <li><a href="#">Gestion intervenants</a></li>
-      <li><a href="#">Gestion salles</a></li>
-      <li><a href="#">Gestion séances</a></li>
+      <li><a href="./index.php?formulaire=true&typeForm=users">Gestion utilisateurs</a></li>
+      <li><a href="./index.php?formulaire=true&typeForm=intervenants">Gestion intervenants</a></li>
+      <li><a href="./index.php?formulaire=true&typeForm=salles">Gestion salles</a></li>
+      <li><a href="./index.php?formulaire=true&typeForm=seances">Gestion séances</a></li>
     </div>
   </div>
 </div>
