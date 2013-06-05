@@ -84,6 +84,9 @@ session_start();
               <li>
                 <a href="#contact">Contact</a>
               </li>
+                <li>
+                <a href="#logout">Déconnexion</a>
+              </li>
             </ul>
             <?php 
               if($_SESSION == NULL || $_SESSION['connexion'] != 'success') {

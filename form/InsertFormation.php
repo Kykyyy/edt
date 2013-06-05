@@ -2,7 +2,7 @@
 
 require('../Classes/Class_Enseignant.php');
 require('../Classes/Connex.inc.php');
-$idcom=connex('edt','myparam');
+$idcom=connex('edt');
 ?>
 
 
