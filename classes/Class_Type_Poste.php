@@ -51,6 +51,12 @@ class type_poste{
 		echo "<script type=\"text/javascript\">alert('type_poste supprimée !')</script>";
 	}
 
+	public static function getRole()
+	{
+		$requete = ("SELECT * FROM type_poste")
+
+	}
+
 }
 
 

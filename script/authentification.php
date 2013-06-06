@@ -2,8 +2,7 @@
 
 require '../classes/Connex.inc.php';
 session_start(); 
-$_SESSION['erreur'] = NULL; 
-$_SESSION['connexion'] = NULL; 
+
 
 if(!empty($_POST['id']) && !empty($_POST['pass'])) 
 {  
