@@ -5,20 +5,21 @@ class Promotion{
 	private $id_promo;
 	private $annee_promo;
 	private $id_formation;
+	private $id_parcours;
+	private $id_grade_formation;
 	
-	public function __construct($id_promo, 
-								$annee_promo, 
-								$id_formation, 
-								
+	public function __construct($id_promo, $annee_promo, $id_formation, $id_parcours, $id_grade_formation)
+	{dddd
 		$this->id_promo = $id_promo;
 		$this->annee_promo = $annee_promo;
 		$this->id_formation = $id_formation;
-	
+		$this->id_parcours = $id_parcours;
+		$this->id_grade_formation = $id_grade_formation;
 
 	}
 
 	public function insertSQL(){
-		$sql =("INSERT into promotion values('','$this->annee_promo','$this->id_formation')");
+		$sql =("INSERT into promotion values('','$this->annee_promo','$this->id_formation','$this->id_parcours','$this->id_grade_formation')");
 		$result = mysql_query($sql) ;
 		if(!$result) echo "<h2>Erreur d'insertion \n n¡",mysql_errno()," : ",mysql_error()."</h2>";
 		
@@ -29,6 +30,9 @@ class Promotion{
 		$sql = ("UPDATE promotion SET
 				annee_promo = '$this->annee_promo'
 				id_formation = '$this->id_formation' 
+				id_parcours = '$this->id_parcours'
+				id_grade_formation = '$this->id_grade_formation'
+
 				where id_promo = '$this->id_promo'");
 		$result = mysql_query($sql) ;
 		if(!$result) echo "<h2>Erreur modification \n n¡",mysql_errno()," : ",mysql_error()."</h2>";
@@ -46,6 +50,8 @@ class Promotion{
 			$this->id_promo = $ligne['id_promo'];
 			$this->annee_promo =  $ligne['annee_promo'];
 			$this->id_formation =  $ligne['id_formation'];			
+			$this->id_parcours =  $ligne['id_parcours'];			
+			$this->id_grade_formation =  $ligne['id_grade_formation'];			
 	
 		}
 		return $this;
