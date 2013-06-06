@@ -35,8 +35,6 @@ $_SESSION['erreur']=NULL;
   </head>
 
   <body>
-    <div class="container-fluid">
-      <div class="row-fluid">
     <?php require('./composants/navbar.php'); ?> <!-- NAV BAR -->
     <div class="container-fluid">
       <div class="row-fluid">
