@@ -12,6 +12,14 @@ class Formation{
 		$this->nom_formation = $nom_formation;
 
 	}
+	public function getidFormation()
+	{
+		return $this->id_formation;
+	}
+	public function getlibFormation()
+	{
+		return $this->nom_formation;
+	}
 	
 	public function insertSQL()	// Insère un objet (nécessite qu'il soit créée)
 	{
