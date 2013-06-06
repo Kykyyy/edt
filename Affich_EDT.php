@@ -81,33 +81,11 @@
 		return $res;
 	
 	}
-	public function get_jour_semaine($date)
-	$date = convertDate($date); 
 
-	$jour = date('d', strtotime($date));
-	$mois =  date('m', strtotime($date));
-	$annee =  date('Y', strtotime($date));
-	$jour_fr = array("Dimanche", "Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi");
-
-	$timestamp = mktime (0, 0, 0, $jour, $mois, $annee);
-
-	$wd = date("w", $timestamp);
-
-	$str_dat = $jour_fr[$wd];
-
-	return ($str_dat);	
-	
-	}
 	
 		
 	
 	}
-	//Convertie une date anglaise en date française
-	function convertDate($date)
-{
-     $tabDate = explode('-' , $date);
-     $enDate  = $tabDate[2].'-'.$tabDate[1].'-'.$tabDate[0];
-     return $enDate;
-}
+
 
 ?>
