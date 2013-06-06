@@ -10,7 +10,7 @@ $_SESSION['erreur']=NULL;
     <title>EDT MIAGE NANTERRE</title>
     <meta name="viewport"    content="width=device-width, initial-scale=1.0">
     <meta name="description" content="EDT de la MIAGE Nanterre Paris OUEST 2013">
-    <meta name="author"      content="ABADA-AUTEROCHE-MIKAELIAN-NDYAE-MAILLAC-PELOUARD">
+    <meta name="author"      content="ABADA-AUTEROCHE-MAILLAC-MIKAELIAN-NDIAYE-PELOUARD">
 
     <!-- Le styles -->
     <link href="./style/bootstrap.css" rel="stylesheet">
@@ -51,7 +51,7 @@ $_SESSION['erreur']=NULL;
       <hr>
 
       <footer>
-        <p>&copy; Copyright 2013 - EDT MIAGE NANTERRE - Mikaelian - Auteroche - Maillac - Abada - Ndiaye - Pelouard</p>
+        <p>&copy; Copyright 2013 - EDT MIAGE NANTERRE - ABADA I. - AUTEROCHE B.- MAILLAC O. - MIKAELIAN M. - NDIAYE M. - PELOUARD S.</p>
       </footer>
 
     </div><!--/.fluid-container-->
