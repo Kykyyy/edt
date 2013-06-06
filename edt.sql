@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client: 127.0.0.1
--- Généré le: Mer 05 Juin 2013 à 11:46
+-- Généré le: Jeu 06 Juin 2013 à 10:07
 -- Version du serveur: 5.5.27-log
 -- Version de PHP: 5.4.6
 
@@ -17,7 +17,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8 */;
 
 --
--- Base de données: `si`
+-- Base de données: `edt`
 --
 
 -- --------------------------------------------------------
@@ -94,16 +94,15 @@ CREATE TABLE IF NOT EXISTS `enseignant` (
   `id_numtypeposte` int(11) NOT NULL,
   PRIMARY KEY (`id_enseignant`),
   KEY `id_numtypeposte` (`id_numtypeposte`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
-
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
 
 --
 -- Contenu de la table `enseignant`
 --
 
-INSERT INTO `enseignant` VALUES (1, 'Laurent', 'Pierre', "19/09/2000","www.posteCV.com", "1");
-INSERT INTO `enseignant` VALUES (1, 'Doub', 'Piah', "19/09/2100","www.test.com", "1");
-
+INSERT INTO `enseignant` (`id_enseignant`, `nom_enseignant`, `prenom_ens`, `date_naissance_ens`, `cv`, `id_numtypeposte`) VALUES
+(1, 'Laurent', 'Pierre', '0000-00-00', 'www.posteCV.com', 1),
+(2, 'Doub', 'Piah', '0000-00-00', 'www.test.com', 1);
 
 -- --------------------------------------------------------
 
@@ -236,8 +235,18 @@ CREATE TABLE IF NOT EXISTS `periode` (
 
 CREATE TABLE IF NOT EXISTS `plage_horaire` (
   `id_plage_horaire` int(11) NOT NULL AUTO_INCREMENT,
+  `h_debut` time NOT NULL,
+  `h_fin` time NOT NULL,
+  `duree` int(11) NOT NULL,
   PRIMARY KEY (`id_plage_horaire`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
+
+--
+-- Contenu de la table `plage_horaire`
+--
+
+INSERT INTO `plage_horaire` (`id_plage_horaire`, `h_debut`, `h_fin`, `duree`) VALUES
+(1, '16:00:00', '17:00:00', 1);
 
 -- --------------------------------------------------------
 
@@ -354,7 +363,7 @@ CREATE TABLE IF NOT EXISTS `ue` (
 CREATE TABLE IF NOT EXISTS `utilisateur` (
   `id_user` int(11) NOT NULL AUTO_INCREMENT,
   `nom_u` varchar(50) NOT NULL,
-  `prenom_u` int(32) NOT NULL,
+  `prenom_u` varchar(32) NOT NULL,
   `id_type_poste` int(11) NOT NULL,
   `login` varchar(20) NOT NULL,
   `mdp` varchar(20) NOT NULL,
