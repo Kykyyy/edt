@@ -53,8 +53,10 @@ class type_poste{
 
 	public static function getRole()
 	{
-		$requete = ("SELECT * FROM type_poste")
-
+		$requete = ("SELECT * FROM type_poste");
+		$res=mysql_query($requete) or die(mysql_error());
+		$result=mysql_fetch_array($res);
+		return $result;
 	}
 
 }

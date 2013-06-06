@@ -1,3 +1,5 @@
+<?php require_once('./classes/Class_Type_Poste.php'); ?>
+
 <div class="container" style="position:relative;">
  		<section class="formulaire" id="formulaire">
 			<h3>Inscription d'un nouvelle intervenant</h3>
@@ -20,7 +22,7 @@
 				  <?php 
 				  		$result=Class_Type_Poste::getRole();
 				  		foreach ($result as $index => $role) {
-				  			echo("<OPTION value=".$index.">".$role; ?>
+				  			echo("<OPTION value=".$index.">".$role); ?>
 				  }
 
 				</SELECT>
