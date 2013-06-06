@@ -1,5 +1,6 @@
 <?php 
 
+require '../classes/Connex.inc.php';
 session_start(); 
 $_SESSION['erreur'] = NULL; 
 $_SESSION['connexion'] = NULL; 
@@ -17,19 +18,23 @@ if(!empty($_POST['id']) && !empty($_POST['pass']))
 	$result = $query->fetch(PDO::FETCH_OBJ); 
 	*/
 
+	$idcom=connex('edt');
+
 	$res=mysql_query($requete);
-	if(!$res) echo "<h2>Erreur de selection \n n",mysql_errno()," : ",mysql_error()."</h2>";
-		$result=mysql_fetch_assoc($res);
+	if(!$res) {
+		echo "<h2>Erreur de selection \n n",mysql_errno()," : ",mysql_error()."</h2>";
+	}
+
+	$result=mysql_fetch_assoc($res);
 	var_dump($result);
 
-
-	if( empty($result) || !sizeof($result) ) // Login / Mot de passe invalide  
+	if( empty($result) ) // Login / Mot de passe invalide  
 		{ 
 			$_SESSION['erreur'] = 'Login ou mot de passe non valide'; 
 
 			 header("Location: ../index.php" ); 
 		} 
-	elseif($result->id_client == 1){  
+	elseif($result['id_numtypeposte'] == 6 ){  
 		$_SESSION['connexion']   =  'success';
 		$_SESSION['user_data']   =  $result;
 		$_SESSION['first_login'] = 0;

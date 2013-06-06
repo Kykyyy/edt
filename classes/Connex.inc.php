@@ -1,8 +1,7 @@
 <?php
-function connex($base,$param)
+function connex($base)
 {
-	//include($param.".inc.php");
-	//$idcom=mysql_connect(MYHOST,MYUSER,MYPASS);
+
 	$idcom=mysql_connect("localhost", "root", "");
 	
 	$idbase=mysql_select_db($base);

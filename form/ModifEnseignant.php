@@ -2,7 +2,7 @@
 
 require('../Classes/Class_Enseignant.php');
 require('../Classes/Connex.inc.php');
-$idcom=connex('edt','myparam');
+$idcom=connex('edt');
 
 // On récupère les infos sur l'intervenant en question
 $sql = mysql_query("Select * FROM enseignant WHERE id_enseignant = 1");
