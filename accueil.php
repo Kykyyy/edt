@@ -48,7 +48,9 @@ session_start();
           <a class="brand" href="#">EDT MIAGE NANTERRE</a>
           <div class="nav-collapse collapse">
 
+
              <?php 
+             /*
               if( $_SESSION['connexion'] != 'success'){
 
                 var_dump($_SESSION);
@@ -56,6 +58,7 @@ session_start();
                    // echo("<p class='navbar-text pull-right'>Connecté en tant que <a href='#' class='navbar-link'>".$_SESSION['user_data']['nom_u']." ".$_SESSION['user_data']['prenom_u']."</a></p>");
 
               }
+              */
             ?>
             
             <ul class="nav">
@@ -86,10 +89,13 @@ session_start();
               </li>
             </ul>
             <?php 
+            /*
               if($_SESSION == NULL || $_SESSION['connexion'] != 'success') {
  
                 require('./composants/formLogin.php');
+
               }
+              */
             ?>
           </div><!--/.nav-collapse -->
         </div>
@@ -123,13 +129,14 @@ session_start();
                   </div>
                 </div>
                 <?php 
+                /*
                 if( $_SESSION != NULL && $_SESSION['connexion'] == 'success' && $_SESSION['admin'] == true){
  
                     require('./composants/menuGestion.php');
  
                 }
 
- 
+                */
                 ?>
                 
               </div>
