@@ -1,5 +1,7 @@
 <?php 
 session_start();
+$_SESSION['connexion']=NULL;
+$_SESSION['erreur']=NULL;
 ?>
 <!DOCTYPE html>
 <html lang="fr">
